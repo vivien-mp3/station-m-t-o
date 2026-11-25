@@ -1,0 +1,18 @@
+[
+    {
+        "code": "89257",
+        "nom": "Migennes",
+        "codesPostaux": [
+            "89400"
+        ],
+        "population": 6688,
+        "centre": {
+            "type": "Point",
+            "coordinates": [
+                3.5337,
+                47.9715
+            ]
+        },
+        "_score": 1.06688
+    }
+]
