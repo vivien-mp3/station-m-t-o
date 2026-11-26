@@ -25,3 +25,12 @@ func Render(w http.ResponseWriter, status int, name string, data any) {
 	w.WriteHeader(status)
 	buffer.WriteTo(w)
 }
+
+type ErrorModel struct{
+	Code int
+	Message string
+}
+
+func RenderError(w http.ResponseWriter, status int, message string) {
+	Render(w, status, "error", ErrorModel{Code: status, Message: message})
+}

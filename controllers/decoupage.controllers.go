@@ -34,3 +34,7 @@ func ListCommunes(w http.ResponseWriter, r *http.Request) {
 
 	templates.Render(w, http.StatusOK, "ville", communes)
 }
+
+func NotFound(w http.ResponseWriter, r *http.Request) {
+	templates.RenderError(w, http.StatusNotFound, "C'est page n'existe pas")
+}

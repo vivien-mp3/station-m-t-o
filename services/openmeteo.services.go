@@ -12,5 +12,7 @@ func GetForecast(code string) (models.Forecast, error) {
 		log.Printf("Une erreur est parvenue. %v", err)
 		return models.Forecast{}, err
 	}
-	return api.GetForecast(commune.Centre.Coordonnees[1], commune.Centre.Coordonnees[0])
+	forecast, err := api.GetForecast(commune[0].Centre.Coordonnees[1], commune[0].Centre.Coordonnees[0])
+	forecast.Nom = commune[0].Nom
+	return forecast, err
 }

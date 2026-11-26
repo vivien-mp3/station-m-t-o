@@ -13,6 +13,6 @@ func GetCommunesByName(name string) ([]models.Commune, error) {
 	return api.GetCommunesByName(name)
 }
 
-func GetCommuneByCode(code string) (models.Commune, error) {
+func GetCommuneByCode(code string) ([]models.Commune, error) {
 	return api.GetCommuneByCode(code)
 }

@@ -13,7 +13,9 @@
         {{range .}}
         <li class="card">
             <p>{{.Nom}}</p>
-            <a href="">Météo</a>
+            <p>Code INSEE: {{.Code}}</p>
+            <p>Population: {{.Population}}</p>
+            <a href="/meteo/{{.Code}}">Météo</a>
         </li>
         {{end}}
     </ul>

@@ -13,7 +13,9 @@ func MainRouter() *http.ServeMux {
 
 	router.HandleFunc("GET /{$}", controllers.Home)
 	router.HandleFunc("GET /ville", controllers.ListCommunes)
+	router.HandleFunc("GET /meteo/{id}", controllers.ShowMeteo)
 	
+	router.HandleFunc("GET /", controllers.NotFound)
 
 	return router
 }

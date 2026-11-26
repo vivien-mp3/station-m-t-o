@@ -1,6 +1,7 @@
 package models
 
 type Forecast struct {
+	Nom string
 	Latitude float64 `json:"latitude"`
 	Longitude float64 `json:"longitude"`
 	Timezone string `json:"timezone"`
@@ -18,5 +19,4 @@ type Forecast struct {
 		TempMin []float64 `json:"temperature_2m_min"`
 		Weather_Code []int `json:"weather_code"`
 	} `json:"daily"`
-
 } 
