@@ -26,7 +26,7 @@ func get(URL, endpoint string, dest any) error {
 
 	response, responseErr := client.Do(request)
 	if responseErr != nil {
-		log.Printf("errooooor")
+		log.Printf("Erreur dans shortcuts.api.go côté réponse: %v", responseErr)
 		return responseErr
 	}
 

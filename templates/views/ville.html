@@ -1,0 +1,23 @@
+{{define "ville"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Météo</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>He he he ha ha Villes</h1>
+    <ul class="grid">
+        {{range .}}
+        <li class="card">
+            <p>{{.Nom}}</p>
+            <a href="">Météo</a>
+        </li>
+        {{end}}
+    </ul>
+    
+</body>
+</html>
+{{end}}
